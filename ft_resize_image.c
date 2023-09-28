@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 12:15:51 by albaud            #+#    #+#             */
-/*   Updated: 2023/03/24 12:57:10 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/28 17:14:31 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ t_canvas	ft_resize_image(void *mlx, t_canvas cvs, int x, int y)
 	i = 0;
 	while (i < res.x)
 	{
-		ft_copy_shrinked_col(res, cvs, (t_v3){(int) ind, i, 0},
-			(t_v3){cvs.y, cvs.y + i - (int) ind, 0});
+		ft_copy_shrinked_col(res, cvs, (t_v2){(int) ind, i},
+			(t_v2){cvs.y, cvs.y + i - (int) ind});
 		ind += (double)cvs.x / (double)res.x;
 		i++;
 	}

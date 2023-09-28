@@ -6,12 +6,25 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 12:28:43 by albaud            #+#    #+#             */
-/*   Updated: 2023/03/24 12:39:10 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/27 16:04:35 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
 # define STRUCT_H
+
+# ifndef T_V2_H
+#  define T_V2_H
+
+typedef struct s_v2
+{
+	double	x;
+	double	y;
+}	t_v2;
+# endif
+
+# ifndef T_V3_H
+#  define T_V3_H
 
 typedef struct s_v3
 {
@@ -19,6 +32,7 @@ typedef struct s_v3
 	double	y;
 	double	z;
 }	t_v3;
+# endif
 
 typedef struct s_line
 {

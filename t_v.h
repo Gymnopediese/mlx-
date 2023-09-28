@@ -1,16 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rgb.c                                           :+:      :+:    :+:   */
+/*   t_v.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/10 00:49:13 by albaud            #+#    #+#             */
-/*   Updated: 2023/09/27 15:51:26 by albaud           ###   ########.fr       */
+/*   Created: 2023/02/15 21:06:06 by albaud            #+#    #+#             */
+/*   Updated: 2023/09/27 16:03:49 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_rgb(int r, int g, int b)
+#ifndef T_V_H
+# define T_V_H
+
+typedef struct s_v
 {
-	return (256 * 256 * r + 256 * g + b);
-}
+	double	*arr;
+	int		size;
+}	t_v;
+
+# ifndef t_m
+#  define t_m
+
+typedef struct s_v2
+{
+	double	x;
+	double	y;
+}	t_v2;
+# endif
+
+# ifndef T_V3_H
+#  define T_V3_H
+
+typedef struct s_v3
+{
+	double	x;
+	double	y;
+	double	z;
+}	t_v3;
+# endif
+
+#endif

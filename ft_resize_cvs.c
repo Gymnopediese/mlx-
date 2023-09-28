@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 01:50:52 by albaud            #+#    #+#             */
-/*   Updated: 2023/03/24 12:38:14 by albaud           ###   ########.fr       */
+/*   Updated: 2023/09/27 16:05:06 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ t_canvas	ft_resize_cvs(void *mlx, t_canvas cvs, double mult)
 	j = 0;
 	while (++i < cvs.x * mult)
 	{
-		ft_resize_ligne (res, cvs, (t_v3){round(j), i, 0},
-			(t_v3){cvs.y, cvs.y * mult, 0});
+		ft_resize_ligne (res, cvs, (t_v2){round(j), i},
+			(t_v2){cvs.y, cvs.y * mult});
 		j += (double) 1 / (double) mult;
 	}
 	return (res);

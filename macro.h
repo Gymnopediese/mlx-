@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 03:08:24 by albaud            #+#    #+#             */
-/*   Updated: 2023/09/27 15:57:43 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:46:07 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,44 @@
 # define BLACK 		0
 
 # define EXITONNULL 1
+
+enum X11Event {
+    KeyPress = 2,
+    KeyRelease = 3,
+    ButtonPress = 4,
+    ButtonRelease = 5,
+    MotionNotify = 6,
+    EnterNotify = 7,
+    LeaveNotify = 8,
+    FocusIn = 9,
+    FocusOut = 10,
+    KeymapNotify = 11,
+    Expose = 12,
+    GraphicsExpose = 13,
+    NoExpose = 14,
+    VisibilityNotify = 15,
+    CreateNotify = 16,
+    DestroyNotify = 17,
+    UnmapNotify = 18,
+    MapNotify = 19,
+    MapRequest = 20,
+    ReparentNotify = 21,
+    ConfigureNotify = 22,
+    ConfigureRequest = 23,
+    GravityNotify = 24,
+    ResizeRequest = 25,
+    CirculateNotify = 26,
+    CirculateRequest = 27,
+    PropertyNotify = 28,
+    SelectionClear = 29,
+    SelectionRequest = 30,
+    SelectionNotify = 31,
+    ColormapNotify = 32,
+    ClientMessage = 33,
+    MappingNotify = 34,
+    GenericEvent = 35,
+    LASTEvent = 36
+};
 
 enum e_keycode
 {

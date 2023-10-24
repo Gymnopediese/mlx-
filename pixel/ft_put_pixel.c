@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 23:37:47 by albaud            #+#    #+#             */
-/*   Updated: 2023/03/24 13:01:01 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:46:19 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_put_pixel(t_canvas *cvs, int x, int y, int color)
 {
-	int	pixel;
-
-	pixel = (y * cvs->line_bytes) + (x * 4);
 	if (cvs->endian == 1)
 	{
 		cvs->cvs[(int)((y * cvs->line_bytes) + (x * 4))] = (color >> 24);

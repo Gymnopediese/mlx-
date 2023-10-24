@@ -6,7 +6,7 @@
 /*   By: albaud <albaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 17:30:13 by albaud            #+#    #+#             */
-/*   Updated: 2023/10/25 01:43:37 by albaud           ###   ########.fr       */
+/*   Updated: 2023/10/25 01:52:50 by albaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include "macro.h"
 # include "struct.h"
 # include <math.h>
-# include "_mlx_opengl_tuned/mlx.h"
+# include "_mlx/mlx.h"
 
 void		ft_mlx_init(t_window *w, int x, int y, char *name);
 
